@@ -45,6 +45,7 @@ const Login = () => {
             <input type='email' placeholder='Enter your email'onChange={handleEmail} required/>
             <input type='password' placeholder='Enter your Password'onChange={handlePassword}required/>
             <button className='signup-btn'>Login</button>
+            <button className='signup-btn' onClick={()=>navigate('/')}>Sign Up</button>
             {user&&<p className='alert' style={{color:'green'}}>Welcome {name}!!!</p>}
             {noUser&&<p className='alert' style={{color:'red'}}>Invalid user or password</p>}
         </form>
